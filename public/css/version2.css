@@ -1,0 +1,291 @@
+@import url('foxsocial-fonts.css');
+ * {
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+body, html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'GaramondLiteDisplay';
+  src: url('/css/fonts/foxsocial/garamond-premier-pro-display_SLAnp/GaramondPremierProDisplay.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gpl64';
+  src: url('/css/fonts/foxsocial/gpl64.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'fox-1';
+  src: url('/css/fonts/foxsocial/fox-1.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'fox-2';
+  src: url('/css/fonts/foxsocial/fox-2.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'fox-3';
+  src: url('/css/fonts/foxsocial/fox-3.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'sp-1';
+  src: url('/css/fonts/foxsocial/squarespace-ui-font.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+.font-1 {
+    font-family: 'fox-1';
+}
+
+.font-2 {
+    font-family: 'fox-2';
+}
+
+.font-3 {
+    font-family: 'fox-3';
+}
+
+.font-sp1 {
+    font-family: 'sp-1';
+}
+
+
+.font-df-1 {
+    font-family: 'df-1';
+}
+
+.font-df-2 {
+    font-family: 'df-2';
+}
+
+.font-df-3 {
+    font-family: 'df-3';
+}
+
+
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+@media (min-width: 768px){
+
+    .masongrid {
+        display: grid;
+        grid-template-columns: repeat(3, calc(100vw/3));
+        grid-auto-rows: calc((100vw/3)/4);
+
+    }
+    
+    
+    .item {
+        grid-row: span 4;
+    }
+
+    .item:nth-child(2) {
+        grid-row: span 5;
+    }
+
+    .item:nth-child(7) {
+        grid-row: span 5;
+    }
+
+    .item:nth-child(9) {
+        grid-row: span 2;
+    }
+
+}
+
+
+
+@media (min-width: 1400px){
+
+    .masongrid {
+        display: grid;
+        grid-template-columns: repeat(4,  1fr);
+        grid-auto-rows: calc(100vw / 16);
+    }
+    
+    
+    .item {
+        grid-row: span 4;
+    }
+
+    .item:nth-child(2) {
+        grid-row: span 6;
+    }
+
+    .item:nth-child(7) {
+        grid-row: span 5;
+    }
+
+    .item:nth-child(9) {
+        grid-row: span 2;
+    }
+
+}
+
+
+
+
+
+
+
+.item img {   
+    object-fit: cover;
+}
+
+
+.item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.item a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+
+.item-hover-contents {
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: rgba(226,114,54,.7);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item:hover .item-hover-contents{
+    opacity: 1;
+   
+}
+
+
+.item-hover-contents .item-inner {
+    text-align: center;
+}
+
+.item {
+    position: relative;
+}
+
+.position-index {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: #000;
+    
+}
+
+.t-upper {
+    text-transform: uppercase;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+
+.item-hover-contents, .item-inner {
+       
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: -1px;
+    text-transform: none;
+}
+
+
+.item-inner p, .item-inner h3 {padding: 0; margin: 0; font-weight: 100;}
+
+.item-inner h3 {
+    font-size: 44px; 
+    font-weight: 300 !important;
+    font-family: 'gpl64';
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+    font-thickness: auto;
+} 
+
+.item-inner p {
+    text-transform: lowercase; font-size:16px;
+    font-family: 'fox-1';
+    letter-spacing: .05em;
+    font-weight: 400;
+}
+
+header[role="main"] {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 144px 1fr;
+}
+
+#main-logo-lg img {
+    max-width: 100%;
+    height: auto;
+}
+
+header nav {
+    padding-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    max-width: 250px;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: #e6ac7a;
+    transition: border .25s ease-out;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Alegreya Sans';
+}
+
+
+header nav a:hover {
+    color: #df6a16;
+    border-bottom: 1px solid #df6a16;
+}
