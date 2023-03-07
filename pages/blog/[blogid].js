@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function blogPage( {blog} ){
+function BlogPage( {blog} ){
 
 
     return (
@@ -15,7 +15,7 @@ function blogPage( {blog} ){
 
 }
 
-export default blogPage;
+export default BlogPage;
 
 
 export async function getStaticPaths(){

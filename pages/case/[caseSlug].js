@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Head from 'next/head';
 
-function casedetail({caseStudy, caseStudies}){
+function Casedetail({caseStudy, caseStudies}){
 
     const router = useRouter()
 
@@ -105,7 +105,7 @@ function casedetail({caseStudy, caseStudies}){
 }
 
 
-export default casedetail
+export default Casedetail
 
 
 export async function getStaticPaths() {

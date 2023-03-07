@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function changeState(){
+export default function ChangeState(){
 
 
     const [count, setCount] = useState(0);
