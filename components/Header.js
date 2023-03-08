@@ -32,13 +32,13 @@ function Header(){
             <nav>
                 <ul className="primary-navigation">
                     <li>
-                        <Link href="/work" >WORK</Link>
+                        <Link className={location.pathname == '/work' ? 'active': '' } href="/work" >WORK</Link>
                     </li>
                     <li>
-                        <Link href="/services" >SERVICES</Link>
+                        <Link className={location.pathname == '/services' ? 'active': '' } href="/services" >SERVICES</Link>
                     </li>
                     <li>
-                        <Link href="/contact">CONTACT</Link>
+                        <Link className={location.pathname == '/contact' ? 'active': '' } href="/contact">CONTACT</Link>
                     </li>
                 </ul>
             </nav>
@@ -56,12 +56,12 @@ function Header(){
     
                 <ul className="right-menu-items">
                     <li>
-                        <Link href="/about">ABOUT</Link>
+                        <Link className={location.pathname == '/about' ? 'active': '' } href="/about">ABOUT</Link>
                     </li>
                     <li>
-                    <Link href="/mission">MISSION</Link>
+                    <Link className={location.pathname == '/mission' ? 'active': '' } href="/mission">MISSION</Link>
                     </li>
-                    <li><Link href="/vision">VISION</Link></li>
+                    <li><Link className={location.pathname == '/vision' ? 'active': '' } href="/vision">VISION</Link></li>
                 </ul>
             </div>
     
