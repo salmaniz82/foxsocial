@@ -56,6 +56,8 @@ function Casedetail({caseStudy, caseStudies}){
         <meta property="og:title" content={casePageTitle}/>
         <meta property="og:description" content={caseStudy.metaDesc} />
         <meta property="og:url" content={ogUrl} />
+        <meta property="og:image" content={caseStudy.image} />
+
       </Head>
         
       <motion.section 
