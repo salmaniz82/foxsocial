@@ -50,6 +50,7 @@ function Casedetail({caseStudy, caseStudies}){
         <meta name="description" content="{caseStudy.description}" key="desc"/>
         <meta property="og:title" content="{casePageTitle}"/>
         <meta property="og:description" content="{caseStudy.description}" />
+        <meta property="og:url" content="{`https://foxsocial.vercel.app/case/${caseStudy.slug}" />
       </Head>
         
       <motion.section 
