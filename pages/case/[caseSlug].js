@@ -41,16 +41,21 @@ function Casedetail({caseStudy, caseStudies}){
   
   let casePageTitle = `Foxsocial ${caseStudy.title}`;
 
+  let ogUrl = `https://foxsocial.vercel.app/case/${caseStudy.slug}`;
+
+  
+  
+
     return (
 
       <>
 
       <Head>
         <title>{casePageTitle}</title>
-        <meta name="description" content="{caseStudy.description}" key="desc"/>
-        <meta property="og:title" content="{casePageTitle}"/>
-        <meta property="og:description" content="{caseStudy.description}" />
-        <meta property="og:url" content="{`https://foxsocial.vercel.app/case/${caseStudy.slug}" />
+        <meta name="description" content={caseStudy.metaDesc} key="desc"/>
+        <meta property="og:title" content={casePageTitle}/>
+        <meta property="og:description" content={caseStudy.metaDesc} />
+        <meta property="og:url" content={ogUrl} />
       </Head>
         
       <motion.section 
@@ -80,6 +85,7 @@ function Casedetail({caseStudy, caseStudies}){
           </div>
 
           <div className="caseDetails">
+            
               <motion.h2 className="page-title"
               initial={{x:100, opacity: 0}}
               animate={{x:0, opacity: 1}}

@@ -4,13 +4,16 @@ import { motion } from "framer-motion";
 
 function About(){
 
+
+    let pageMetaContent = "fox social about page details";
+
     return (
 
         <>
 
         <Head>
             <title>Foxsocial - About </title>
-            <meta name="description" content="meta description for content page here"/>
+            <meta name="description" content={pageMetaContent}/>
         </Head>
 
         <motion.section 
