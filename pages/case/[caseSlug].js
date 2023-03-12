@@ -47,9 +47,9 @@ function Casedetail({caseStudy, caseStudies}){
 
       <Head>
         <title>{casePageTitle}</title>
-        <meta name="og:title" content="{casePageTitle}"/>
-        <meta name="description" content="{caseStudy.description}"/>
-        <meta name="og:description" content="{caseStudy.description}"/>
+        <meta name="description" content="{caseStudy.description}" key="desc"/>
+        <meta property="og:title" content="{casePageTitle}"/>
+        <meta property="og:description" content="{caseStudy.description}" />
       </Head>
         
       <motion.section 
