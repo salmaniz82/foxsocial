@@ -20,7 +20,7 @@ function services(){
         transition={{ duration: .5}} 
         className="content-area header-clear">
             
-        <h2 className="page-title font-AlegreyaSans">Services</h2>
+        <h2 className="page-title font-AlegreyaSans">Services: updated</h2>
         
         <div className="page-details">
             <p>Pellentesque ac pulvinar ante. Cras porttitor lorem ex, vitae iaculis ligula vehicula sed. Vivamus mollis molestie elit, eu mattis lacus sollicitudin at. Nam id velit est. Quisque id nulla et purus vestibulum ornare. Morbi gravida ipsum felis, a scelerisque velit varius a. Integer ut ipsum tortor. Donec in sapien nec nibh suscipit euismod.</p>
