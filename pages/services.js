@@ -66,7 +66,7 @@ const serivesItems = [
     }, 
     {
         id: 9,
-        title : "content curation",
+        title : "copywriting",
         details: "From website content to blogs, newsletters, and Instagram captions, we craft compelling and engaging copy that captivates your audience and drives results by compelling them to take action, whether liking, sharing, or clicking a link. You can ensure consistent and compelling messaging across your digital platforms by leveraging our copywriting services.",
         image: "/images/services/copywriting.jpeg"
     }, 
@@ -98,7 +98,7 @@ function services(){
         transition={{ duration: .5}} 
         className="content-area header-clear">
             
-        <h2 className="page-title font-AlegreyaSans">Features Overview</h2>
+        <h2 className="page-title font-AlegreyaSans text-center">Features Overview</h2>
         
         <div className="page-details">
 
@@ -123,13 +123,15 @@ function services(){
 
                 <>
                 <SwiperSlide key={item.id} className="service-item">
-                    <h3 className="text-center">{item.title}</h3>
+                    
                 <div class="ser-img-wrap">
                         {/**
                          * <Image src={item.image} placeholder={item.image} alt={"Service Image"} fill objectFit="contain"></Image> 
                         */}
                     <img src={item.image} alt={"Service Image"} />                       
                     </div>
+
+                    <h3 className="text-center">{item.title}</h3>
                     
                     <p className="text-center">{item.details}</p>
                 </SwiperSlide>

@@ -821,14 +821,19 @@ footer .quickLinks a {
 .services-items {
     max-width: 800px;
     margin: 0 auto;
-    border: 1px solid green;
+    
+}
+
+.service-item {
+    font-family: 'GaramondPD';
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #4c4f4a
 }
 
 
-
-
 .ser-img-wrap img {
-    max-width: 100%; border: 1px solid red;
+    max-width: 100%; 
     max-height: 400px;
 }
 
@@ -839,4 +844,17 @@ footer .quickLinks a {
 
 .text-center {
     text-align: center;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #df6a16 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #df6a16 !important;
+}
+
+.swiper-pagination {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
