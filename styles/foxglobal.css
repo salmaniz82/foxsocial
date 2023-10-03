@@ -824,11 +824,16 @@ footer .quickLinks a {
     
 }
 
+.services-items .swiper{
+    padding-bottom: 100px;
+}
+
 .service-item {
     font-family: 'GaramondPD';
     font-size: 40px;
     text-transform: capitalize;
-    color: #4c4f4a
+    color: #4c4f4a;
+    user-select: none;
 }
 
 
