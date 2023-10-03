@@ -4,6 +4,15 @@ import Image from 'next/image';
 import styles from '/styles/services.module.css'
 
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+
+
+// Import Swiper styles
+import 'swiper/swiper-bundle.css';
+
+
 const serivesItems = [
     {
         id: 1,
@@ -68,12 +77,7 @@ const serivesItems = [
         image: "/images/services/website-management.jpg"
     }, 
 
-
-
 ];
-
-
-
 
 
 function services(){
@@ -101,26 +105,48 @@ function services(){
 
             <div class="services-items">
 
+
+            <Swiper
+            modules={[Navigation, Pagination, ]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation={true}
+            pagination={{ clickable: true }}
+            loop={true}       
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}>
+        
+                
+                
+
                 {serivesItems.map(item => (
 
-                    <div key={item.id} class="service-item">
-                    <div class="ser-img-wrap">
+                <>
+                <SwiperSlide key={item.id} className="service-item">
+                <div class="ser-img-wrap">
                         {/**
                          * <Image src={item.image} placeholder={item.image} alt={"Service Image"} fill objectFit="contain"></Image> 
                         */}
-
-                    <img src={item.image} alt={"Service Image"} />
-                        
+                    <img src={item.image} alt={"Service Image"} />                       
                     </div>
                     <h3>{item.title}</h3>
                     <p> {item.details}</p>
-                    </div>
+                </SwiperSlide>
+                    </>
 
-                ))}
+                    ))}
+    
+             </Swiper>
+                
+
+                
 
                 
                     
             </div>
+
+            
+
 
 
         </div>
