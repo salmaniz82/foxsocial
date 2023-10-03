@@ -123,14 +123,15 @@ function services(){
 
                 <>
                 <SwiperSlide key={item.id} className="service-item">
+                    <h3 className="text-center">{item.title}</h3>
                 <div class="ser-img-wrap">
                         {/**
                          * <Image src={item.image} placeholder={item.image} alt={"Service Image"} fill objectFit="contain"></Image> 
                         */}
                     <img src={item.image} alt={"Service Image"} />                       
                     </div>
-                    <h3>{item.title}</h3>
-                    <p> {item.details}</p>
+                    
+                    <p className="text-center">{item.details}</p>
                 </SwiperSlide>
                     </>
 
