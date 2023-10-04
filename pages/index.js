@@ -5,9 +5,44 @@ import { motion } from "framer-motion";
 import styles from '../styles/Home.module.css'
 import path from 'path';
 import { promises as fs } from 'fs';
+import { useEffect, useState } from 'react';
 
 
 function Home({caseStudies}) {
+
+  useEffect(function(){
+
+    for(const obj of caseStudies){
+      obj.isActive = false;
+      
+    }
+
+  }, [])
+
+  
+ const [caseStudiesState, setCaseStudies] = useState(caseStudies)
+
+  function handleCaseCTA(e, caseId){
+
+    console.log('working for handle case CTA', caseId);
+
+    setCaseStudies( (prevItems) =>  
+
+    prevItems.map(item => ({
+
+      ...item,
+      isActive : (item.id == caseId) ? true : false,
+
+    }))
+    
+    );
+
+
+
+    e.preventDefault();
+
+  }
+
   return (
     <>
     <div className="container">
@@ -18,16 +53,23 @@ function Home({caseStudies}) {
 
       <div className="masongrid">
 
-        {caseStudies.map( (caseStudy) => 
+        {caseStudiesState.map( (caseStudy) => 
 
           <div key={caseStudy.id} className="item"  style={{backgroundImage: `url(${caseStudy.image})`}}>
                 <div className="position-index">first item</div>
-            <Link className="item-hover-contents" href={'/case/'+caseStudy.slug}>
+
+                {/*
+                Using Template Literals (Recommended):
+                <a className={`item-hover-contents ${caseStudy.isActive ? 'active' : 'no-active'}`}>
+                #Using String Concatenation:
+                */}
+
+            <a className={"item-hover-contents " + (caseStudy.isActive ? 'active' : 'no-active') }  href={'/case/'+caseStudy.slug} onClick={(e) => {handleCaseCTA(e, caseStudy.id)}}>
                 <div className="item-inner">
                     <h3>{caseStudy.title}</h3>
                     <p>— view —</p>
                 </div>                   
-            </Link>
+            </a>
         </div>
 
           

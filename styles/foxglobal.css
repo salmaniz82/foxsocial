@@ -275,9 +275,8 @@ body, html {
     flex-direction: column;
 }
 
-.item:hover .item-hover-contents{
+.item:hover .item-hover-contents, .item-hover-contents.active {
     opacity: 1;
-   
 }
 
 
