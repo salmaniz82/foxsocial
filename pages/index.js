@@ -24,20 +24,17 @@ function Home({caseStudies}) {
 
   function handleCaseCTA(e, caseId){
 
-    console.log('working for handle case CTA', caseId);
-
-    setCaseStudies( (prevItems) =>  
-
-    prevItems.map(item => ({
-
-      ...item,
-      isActive : (item.id == caseId) ? true : false,
-
-    }))
     
-    );
-
-
+      setCaseStudies( prevItems =>  
+        prevItems.map(item => ({
+    
+          ...item,
+          isActive : (item.id == caseId) ? true : false,
+    
+        }))
+        
+        );
+    
 
     e.preventDefault();
 
@@ -67,7 +64,7 @@ function Home({caseStudies}) {
             <a className={"item-hover-contents " + (caseStudy.isActive ? 'active' : 'no-active') }  href={'/case/'+caseStudy.slug} onClick={(e) => {handleCaseCTA(e, caseStudy.id)}}>
                 <div className="item-inner">
                     <h3>{caseStudy.title}</h3>
-                    <p>— view —</p>
+                    <p>-[ {caseStudy.metaDesc} ]-</p>
                 </div>                   
             </a>
         </div>
