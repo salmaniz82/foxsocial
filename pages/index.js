@@ -6,6 +6,8 @@ import styles from '../styles/Home.module.css'
 import path from 'path';
 import { promises as fs } from 'fs';
 import { useEffect, useState } from 'react';
+import CustomSlider from '../components/CustomSlider';
+
 
 
 function Home({caseStudies}) {
@@ -79,6 +81,28 @@ function Home({caseStudies}) {
       
 
       </div>   
+
+
+      <section className="testimonial-section">
+
+          <div className="testimonial-section-inner">
+
+            <h3 className="text-center">LOVE LETTERS</h3>
+
+          
+
+            <CustomSlider />
+
+          </div>
+
+      </section>
+
+
+      
+
+      
+
+
     </>
   )
 }

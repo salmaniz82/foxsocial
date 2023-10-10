@@ -33,7 +33,7 @@ function Footer(){
             <a href="#"><Image src="/images/social/Twitter-02.svg" width={30} height={30} alt="Twitter Icon" /></a>
         </div>
 
-        <div className="copyright-info">Copyright FoxSocial © 2022</div>
+        <div className="copyright-info">Copyright FoxSocial © 2023</div>
         
     </div>
         

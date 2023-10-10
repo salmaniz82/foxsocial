@@ -818,21 +818,43 @@ footer .quickLinks a {
 
 
 .services-items {
-    max-width: 800px;
+    
     margin: 0 auto;
     
 }
 
 .services-items .swiper{
-    padding-bottom: 100px;
+    padding: 30px 10px 80px 10px;
 }
 
 .service-item {
+    height: 100%;
+    
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+}
+
+.service-item h3 {
     font-family: 'GaramondPD';
-    font-size: 40px;
+    font-size: 24px;
     text-transform: capitalize;
     color: #4c4f4a;
     user-select: none;
+}
+
+.service-item p {
+    line-height: 1.25rem;
+    font-size: 16px;
+    padding: 10px;
+    text-align: justify;
+} 
+
+.ser-img-wrap {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    height: 420px;
+    object-position: center;
+    
 }
 
 
@@ -841,10 +863,7 @@ footer .quickLinks a {
     max-height: 400px;
 }
 
-.ser-img-wrap {
-    display: flex;
-    justify-content: center;
-}
+
 
 .text-center {
     text-align: center;
@@ -861,4 +880,30 @@ footer .quickLinks a {
 .swiper-pagination {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+
+.services-items .swiper {
+    height: 100%;
+  }
+  .services-items .swiper-slide {
+height: auto !important;
+}
+.services-items .swiper-content {
+    height: 100% !important
+}
+
+.testimonial-section {
+    background-color: #BB6010;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.testimonial-section h3 {
+    margin-top: 0;
+    padding-top: 0;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 0;
+
 }

@@ -10,7 +10,13 @@ import { Navigation, Pagination } from 'swiper/modules';
 
 
 // Import Swiper styles
+/*
 import 'swiper/swiper-bundle.css';
+*/
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 
 const serivesItems = [
@@ -108,11 +114,13 @@ function services(){
 
             <Swiper
             modules={[Navigation, Pagination, ]}
-            spaceBetween={50}
-            slidesPerView={1}
+            spaceBetween={20}
+            slidesPerView={3}
             navigation={true}
             pagination={{ clickable: true }}
-            loop={true}       
+            loop={true}
+            height={"auto"}
+            
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}>
         
