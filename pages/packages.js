@@ -72,12 +72,12 @@ function packages(){
                 
                 {packages.map( (item, index) => 
                     
-                    <div className="packageItem">        
+                    <div className="packageItem" key={item.id}>
                         <div className="packageTitle"><h4>{item.title}</h4></div>
                         <ul className="packageOutline">
 
-                            {item.features.map(feature => 
-                                <li>{'- ' + feature}</li>
+                            {item.features.map((feature, index) => 
+                                <li key={index}>{'- ' + feature}</li>
                             )}
 
                         </ul>
