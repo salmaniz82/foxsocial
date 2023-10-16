@@ -109,14 +109,18 @@ function services(){
         
         <div className="page-details">
 
-
+            
             <div class="services-items">
 
 
             <Swiper
             modules={[Navigation, Pagination, ]}
             spaceBetween={20}
-            slidesPerView={3}
+            slidesPerView={1}
+            breakpoints={{
+                768: {slidesPerView: 2, spaceBetween: 20},
+                900: {slidesPerView: 3, spaceBetween: 20}
+            }}
             navigation={true}
             pagination={{ clickable: true }}
             loop={true}
@@ -133,7 +137,7 @@ function services(){
                 <>
                 <SwiperSlide key={item.id} className="service-item">
                     
-                <div class="ser-img-wrap">
+                <div className="ser-img-wrap">
                         {/**
                          * <Image src={item.image} placeholder={item.image} alt={"Service Image"} fill objectFit="contain"></Image> 
                         */}
