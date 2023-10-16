@@ -893,6 +893,17 @@ height: auto !important;
     height: 100% !important
 }
 
+
+.service-item h3 {
+    color: #BB6010;
+}
+
+.service-item p {
+
+    font-family: Alice !important;
+    
+}
+
 .testimonial-section {
     background-color: #BB6010;
     padding-top: 30px;

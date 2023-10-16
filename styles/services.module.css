@@ -4,6 +4,7 @@
 
 
 .service-item-detail {
-    font-family: Alice !important;
+    
+    border: 1px solid red;
     
 }
