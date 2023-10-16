@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { motion } from "framer-motion";
 import Image from 'next/image';
+
 import styles from '/styles/services.module.css'
 
 
@@ -141,7 +142,7 @@ function services(){
 
                     <h3 className="text-center">{item.title}</h3>
                     
-                    <p className="text-center">{item.details}</p>
+                    <p className={`text-center ${styles['service-item-detail']}`}>{item.details}</p>
                 </SwiperSlide>
                     </>
 
