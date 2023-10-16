@@ -87,7 +87,7 @@ function Contact(){
                         <div className={css['field_wrap']}>
                             <input type="text" 
                                 name="lastname" 
-                                className={`${css.floadField}  ${!formPayload.firstname.length ? (css['empty']) : (css['not-empty'])}`} 
+                                className={`${css.floadField}  ${!formPayload.lastname.length ? (css['empty']) : (css['not-empty'])}`} 
                                 id="lastname" 
                                 value={formPayload.lastname}
                                 onChange={handleChange}
@@ -102,7 +102,7 @@ function Contact(){
                             <input 
                                 type="email" 
                                 name="email" 
-                                className={`${css.floadField}  ${!formPayload.firstname.length ? (css['empty']) : (css['not-empty'])}`} 
+                                className={`${css.floadField}  ${!formPayload.email.length ? (css['empty']) : (css['not-empty'])}`} 
                                 id="email"
                                 value={formPayload.email}
                                 onChange={handleChange}
@@ -115,7 +115,7 @@ function Contact(){
                             <input 
                                 type="text" 
                                 name="subject" 
-                                className={`${css.floadField}  ${!formPayload.firstname.length ? (css['empty']) : (css['not-empty'])}`} 
+                                className={`${css.floadField}  ${!formPayload.subject.length ? (css['empty']) : (css['not-empty'])}`} 
                                 id="subject"
                                 value={formPayload.subject}
                                 onChange={handleChange}
