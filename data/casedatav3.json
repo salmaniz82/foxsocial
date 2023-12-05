@@ -8,22 +8,14 @@
 		"description": "<p>Content Creation: Joseph Remfry & Sian Keady</p>",
 		"metaDesc" : "Content Creation: Joseph Remfry & Sian Keady"
 	},
-	{
-		"id": 2,
-		"title": "Swoon",
-		"image": "/images/fox-images/swoon.jpg",
-		"slug": "swoon",
-		"description": "<p>Models: Kayleigh <strong>Grant</strong> & Chloe Lytton<p>",
-		"metaDesc" : "Models: Kayleigh Grant & Chloe Lytton"
 
-	},
 	{
-		"id": 3,
-		"title": "Runaway East",
-		"image": "/images/fox-images/runaway.JPEG",
-		"slug": "runaway-east",
-		"description": "<p>Content Creation: Dannie Fine</p>",
-		"metaDesc" : "Models: Kayleigh Grant & Chloe Lytton"
+		"id": 5,
+		"title": "Tao Tao Ju",
+		"image": "/images/fox-images/tau-ju.jpg",
+		"slug": "tao-tao-ju",
+		"description": "<p>Content Creation: Joseph Remfry & Sian Keady</p>",
+		"metaDesc" : "Content Creation: Joseph Remfry & Sian Keady"
 	},
 
 	{
@@ -34,14 +26,56 @@
 		"description": "<p>Content Creation & Photography: Dannie Fine</p>",
 		"metaDesc" : "Content Creation & Photography: Dannie Fine"
 	},
+
 	{
-		"id": 5,
-		"title": "Tao Tao Ju",
-		"image": "/images/fox-images/tau-ju.jpg",
-		"slug": "tao-tao-ju",
-		"description": "<p>Content Creation: Joseph Remfry & Sian Keady</p>",
-		"metaDesc" : "Content Creation: Joseph Remfry & Sian Keady"
+		"id": 14,
+		"title": "Sam McKnight",
+		"image": "/images/fox-images/sam-mcnight.png",
+		"slug": "sam-mgknight",
+		"description": "<p>tagline: tagline detail</p>",
+		"metaDesc": "Content Creation: Sam McKnight"
 	},
+
+	{
+		"id": 2,
+		"title": "Swoon",
+		"image": "/images/fox-images/swoon.jpg",
+		"slug": "swoon",
+		"description": "<p>Models: Kayleigh <strong>Grant</strong> & Chloe Lytton<p>",
+		"metaDesc" : "Models: Kayleigh Grant & Chloe Lytton"
+
+	},
+
+	{
+		"id": 12,
+		"title": "SKIMM",
+		"image": "/images/fox-images/skimm.png",
+		"slug": "skimm",
+		"description": "<p>tagline: skimm</p>",
+		"metaDesc": "Content Creation: Dannie Fine"
+	},
+
+	{
+		"id": 11,
+		"title": "TOTOM",
+		"image": "/images/fox-images/tomtom.png",
+		"slug": "totom",
+		"description": "<p>tagline: Totom</p>",
+		"metaDesc": "Content Creation: Dannie Fine"
+	},
+
+
+	{
+		"id": 3,
+		"title": "Runaway East",
+		"image": "/images/fox-images/runaway.JPEG",
+		"slug": "runaway-east",
+		"description": "<p>Content Creation: Dannie Fine</p>",
+		"metaDesc" : "Models: Kayleigh Grant & Chloe Lytton"
+	},
+	
+	
+
 	{
 		"id": 6,
 		"title": "Hello Day",
@@ -50,14 +84,9 @@
 		"description": "<p>Photography: Dannie Fine & Cal</p> <p>Content Creation: Dannie Fine, Sian Keady & Fox Socials</p>",
 		"metaDesc": "Photography: Dannie Fine & Cal, Content Creation: Dannie Fine, Sian Keady & Fox Socials"
 	},
-	{
-		"id": 7,
-		"title": "Seignette VS",
-		"image": "/images/fox-images/seignette-vs.png",
-		"slug": "seignette-vs",
-		"description": "<p>Photography: Dannie Fine, Joseph Remfry & Cal</p><p>Content Creation: Dannie FIne</p>",
-		"metaDesc": "Photography: Dannie Fine, Joseph Remfry & Cal Content Creation: Dannie FIne"
-	},
+
+	
+
 	{
 		"id": 8,
 		"title": "NL Property",
@@ -66,13 +95,47 @@
 		"description": "<p>Content Creation: Dannie Fine</p>",
 		"metaDesc": "Content Creation: Dannie Fine"
 	},
+
 	{
-		"id": 9,
-		"title": "Global Health Assured",
-		"image": "/images/fox-images/global-health.JPEG",
-		"slug": "global-health",
-		"description": "<p>Content Creation: Dannie Fine</p>",
+		"id": 10,
+		"title": "Tweaked",
+		"image": "/images/fox-images/tweaked.png",
+		"slug": "tweaked",
+		"description": "<p>tagline: Tweaked</p>",
 		"metaDesc": "Content Creation: Dannie Fine"
+	},
+
+	
+
+	{
+		"id": 13,
+		"title": "Fit-Tech",
+		"image": "/images/fox-images/fittech.png",
+		"slug": "fit-tech",
+		"description": "<p>tagline: Fit-Tech</p>",
+		"metaDesc": "Content Creation: Dannie Fine"
+	},
+
+
+	
+
+
+	
+	
+	
+	{
+		"id": 7,
+		"title": "Seignette VS",
+		"image": "/images/fox-images/seignette-vs.png",
+		"slug": "seignette-vs",
+		"description": "<p>Photography: Dannie Fine, Joseph Remfry & Cal</p><p>Content Creation: Dannie FIne</p>",
+		"metaDesc": "Photography: Dannie Fine, Joseph Remfry & Cal Content Creation: Dannie FIne"
 	}
+	
+	
+	
+
+
+	
 
 ]

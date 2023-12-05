@@ -2,7 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from "framer-motion";
+/*
 import styles from '../styles/Home.module.css'
+*/
 import path from 'path';
 import { promises as fs } from 'fs';
 import { useEffect, useState } from 'react';
@@ -54,8 +56,9 @@ function Home({caseStudies}) {
 
         {caseStudiesState.map( (caseStudy) => 
 
-          <div key={caseStudy.id} className="item"  style={{backgroundImage: `url(${caseStudy.image})`}}>
-                <div className="position-index">first item</div>
+          <div key={caseStudy.id} className="item">
+                
+                <Image src={caseStudy.image} fill={true} className="caseImageNew" alt={caseStudy.title}/>
 
                 {/*
                 Using Template Literals (Recommended):
